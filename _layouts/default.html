@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="origin">
+    <title>{{page.title}} - PLEX</title>
+    {% seo title=false %}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="theme-color" content="#ec9611">
+    <meta name="msapplication-navbutton-color" content="#ec9611">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ec9611">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/all.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet" type="text/css" > 
+    <link href='//fonts.googleapis.com/css?family=Courgette|Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation" id="main-navigation">
+        <div class="container">
+            <div class="">
+                <!--Logo de plex con hiperlink-->
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tnavbar">
+                <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="tnavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/" title="Home" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-home"></span> Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/products" title="Productos" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-cutlery"></span> Niveles</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Niveles
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/about" title="¿Quienes somos?" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-info-sign"></span> ¿Quiénes Somos?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {{ content }}
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <p><a href="https://sciencefornourishment.github.io/">PLEX - Programa de Lengua Extranjera</a> &copy; 2017<br/> Powered
+                        by <a href="http://github.com" data-proofer-ignore title="GitHub Pages"><i class="fa fa-github-alt"></i></a>                        with <i class="fa fa-heart"></i> </p>
+                </div>
+                <div class="col-md-5">
+                    <ul class="list-inline list-footer-social">
+                        <li><a href="https://www.facebook.com/sciencefornourishment/" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ScienceNourish" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/science_for_nourishment/" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!--
+<li class="dropdown open">
+<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+Lista de países&nbsp;<span class="caret"></span>
+</a>
+<ul class="dropdown-menu multi-column columns-3" role="menu">
+<div class="row">
+<div class="col-sm-4">
+<ul class="multi-column-dropdown">
+<li><a href="/tag/alemania"></a></li>
+<li><a href="/tag/austria">Austria</a></li>
+<li><a href="/tag/belgica">Bélgica</a></li>
+<li><a href="/tag/camboya">Camboya</a></li>
+<li><a href="/tag/colombia">Colombia</a></li>
+<li><a href="/tag/corea-del-sur">Corea del Sur</a></li>
+<li><a href="/tag/china">China</a></li>
+<li><a href="/tag/espana">España</a></li>
+<li><a href="/tag/estados-unidos">Estados Unidos de América</a></li>
+<li><a href="/tag/filipinas">Filipinas</a></li>
+</ul>
+</div>
+<div class="col-sm-4">
+<ul class="multi-column-dropdown">
+<li><a href="/tag/francia">Francia</a></li>
+<li><a href="/tag/grecia">Grecia</a></li>
+<li><a href="/tag/hong-kong">Hong Kong</a></li>
+<li><a href="/tag/holanda">Holanda</a></li>
+<li><a href="/tag/india">India</a></li>
+<li><a href="/tag/italia">Italia</a></li>
+<li><a href="/tag/japon">Japón</a></li>
+<li><a href="/tag/macao">Macao</a></li>
+<li><a href="/tag/malasia">Malasia</a></li>
+<li><a href="/tag/marruecos">Marruecos</a></li>
+</ul>
+</div>
+<div class="col-sm-4">
+<ul class="multi-column-dropdown">
+<li><a href="/tag/mexico">México</a></li>
+<li><a href="/tag/panama">Panama</a></li>
+<li><a href="/tag/reino-unido">Reino Unido</a></li>
+<li><a href="/tag/republica-checa">República Checa</a></li>
+<li><a href="/tag/singapur">Singapur</a></li>
+<li><a href="/tag/suiza">Suiza</a></li>
+<li><a href="/tag/tailandia">Tailandia</a></li>
+<li><a href="/tag/turquia">Turquía</a></li>
+<li><a href="/tag/vietnam">Vietnam</a></li>
+</ul>
+</div>
+</div>
+</ul>
+</li> -->
