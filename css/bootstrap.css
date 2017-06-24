@@ -1121,6 +1121,7 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
+  height:1125px;
   max-width: 100%;
   height: auto;
 }
@@ -6235,12 +6236,13 @@ button.close {
   border-left-color: #fff;
 }
 .carousel {
-  position: relative;
+  max-height: 500px;
 }
 .carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+    position: relative;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
 }
 .carousel-inner > .item {
   position: relative;
